@@ -27,8 +27,8 @@ export class CuadradoView {
     this.cantidadCuadrados = 0
   }
 
-  eliminarCuadrado({cuadrado}: { cuadrado: Cuadrado }) {
-    this.cuadrados = this.cuadrados.filter(cuadradoAEliminar => cuadradoAEliminar !== cuadrado)
+  eliminarCuadrado({ cuadrado }: { cuadrado: Cuadrado }) {
+    this.cuadrados = this.cuadrados.filter((cuadradoAEliminar) => cuadradoAEliminar !== cuadrado)
   }
 
   eliminarCuadrados() {
