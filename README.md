@@ -1,4 +1,4 @@
-# 🔄 Conversor Pelela
+# ▪️ Cuadrados Pelela
 
 [![CI](https://github.com/uqbar-project/eg-cuadrados-pelela/actions/workflows/ci.yml/badge.svg)](https://github.com/uqbar-project/eg-cuadrados-pelela/actions/workflows/ci.yml)
 
