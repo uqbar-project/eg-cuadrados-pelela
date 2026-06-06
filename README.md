@@ -19,7 +19,7 @@ Abrí tu navegador e ingresá a [http://localhost:5173](http://localhost:5173) p
 
 ## 🟦 De lado, a lado, cada uno en su cuadrado
 
-![demo](./images/demo-cuadrados-ok.gif)
+![demo](./images/demo-cuadrados-ok-2.gif)
 
 En el ejemplo vemos que
 
@@ -32,7 +32,7 @@ En el ejemplo vemos que
 
 ### Binding entre vista y view model
 
-![binding cuadrados](./images/binding-cuadrados-ok-2.png)
+![binding cuadrados](./images/binding-cuadrados-ok.png)
 
 Si queremos crear 3 cuadrados:
 
