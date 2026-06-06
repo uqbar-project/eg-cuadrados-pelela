@@ -32,7 +32,7 @@ En el ejemplo vemos que
 
 ### Binding entre vista y view model
 
-![binding cuadrados](./images/cuadrados-binding.png)
+![binding cuadrados](./images/binding-cuadrados-ok.png)
 
 Si queremos crear 3 cuadrados:
 
