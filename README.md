@@ -54,7 +54,7 @@ Al eliminar un cuadrado:
 
 ```ts
 eliminarCuadrado({ cuadrado }: { cuadrado: Cuadrado }) {
-this.cuadrados = this.cuadrados.filter((cuadradoAEliminar) => cuadradoAEliminar !== cuadrado)
+  this.cuadrados = this.cuadrados.filter((cuadradoAEliminar) => cuadradoAEliminar !== cuadrado)
 }
 ```
 
