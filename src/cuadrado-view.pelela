@@ -1,0 +1,22 @@
+<div class="card">
+  <h1>Ejemplo de cuadrados dinámicos</h1>
+
+  <pelela view-model="CuadradoView">
+    <div class="row">
+      <div class="input-group">
+        <label for="cuadrados-input">Cantidad de cuadrados</label>
+        <input id="cuadrados-input" type="number" bind-value="cantidadCuadrados" placeholder="0"/>
+      </div>
+      <button class="secondary" click="agregarVariosCuadrados">Agregar varios</button>
+    </div>
+
+    <div class="row">
+      <button click="agregarCuadrado">Agregar</button>
+      <button class="secondary" click="eliminarCuadrados">Eliminar todos</button>
+    </div>
+
+    <div class="cuadrados-container">
+      <button for-each="cuadrado of cuadrados" class="cuadrado" bind-class="cuadrado.clase" click="eliminarCuadrado"/>
+    </div>
+  </pelela>
+</div>

@@ -1,0 +1,132 @@
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  min-width: 90vw;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color var(--transition);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition), transform 0.1s;
+}
+
+button:hover {
+  background-color: var(--primary-bg-hover);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.secondary {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
+  height: fit-content;
+  font-weight: 400;
+}
+
+.secondary:hover {
+  background-color: var(--secondary-bg-hover);
+}
+
+
+.cuadrados-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--square-size));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.cuadrado {
+  background-color: var(--secondary-color);
+  height: var(--square-size);
+  width: var(--square-size);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color var(--transition), transform 0.1s;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.red:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.green {
+  background-color: #27ae60;
+}
+
+.green:hover {
+  background-color: #1e8449;
+  transform: scale(1.05);
+}
+
+.blue {
+  background-color: #2980b9;
+}
+
+.blue:hover {
+  background-color: #1c5980;
+  transform: scale(1.05);
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.yellow:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.05);
+}
