@@ -19,7 +19,7 @@ Abrí tu navegador e ingresá a [http://localhost:5173](http://localhost:5173) p
 
 ## 🟦 De lado, a lado, cada uno en su cuadrado
 
-![demo](./images/demo-cuadrados-ok-2.gif)
+![demo](./images/demo-cuadrados-ok-3.gif)
 
 En el ejemplo vemos que
 
