@@ -13,8 +13,6 @@ pnpm install
 pnpm dev
 ```
 
-1. **Ver la aplicación:**
-
 Abrí tu navegador e ingresá a [http://localhost:5173](http://localhost:5173) para ver la aplicación funcionando en vivo.
 
 ## 🟦 De lado, a lado, cada uno en su cuadrado

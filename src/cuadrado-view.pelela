@@ -16,7 +16,7 @@
     </div>
 
     <div class="cuadrados-container">
-      <button for-each="cuadrado of cuadrados" class="cuadrado" bind-class="cuadrado.clase" click="eliminarCuadrado"/>
+      <button for-each="cuadrado of cuadrados" class="cuadrado" bind-class="cuadrado.clase" click="eliminarCuadrado"></button>
     </div>
   </pelela>
 </div>
