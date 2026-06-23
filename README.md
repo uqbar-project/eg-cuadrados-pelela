@@ -26,7 +26,21 @@ En el ejemplo vemos que
 - se puede agregar un cuadrado a la lista
 - y al hacer click sobre el cuadrado se elimina
 - cuando pasamos el mouse (hover) sobre un cuadrado se visualiza de un color "seleccionado" y también se muestra una animación para agrandarlo un poquito
-- los cuadrados siguen el formato grid: se van ubicando de derecha a izquierda hasta ocupar el ancho y luego abajo
+- los cuadrados siguen el formato grid: se van ubicando de derecha a izquierda hasta ocupar el ancho y luego continúan abajo
+
+```css
+grid-template-columns: repeat(auto-fit, var(--square-size));
+```
+
+Para mostrar cada uno de los cuadrados, Pelela soporta `for-each` como mecanismo de loop:
+
+```html
+<div class="cuadrados-container">
+  <button for-each="cuadrado of cuadrados" class="cuadrado" bind-class="cuadrado.clase" click="eliminarCuadrado"></button>
+</div>
+```
+
+En general el atributo `for-each` soporta `x of xs` donde x es un elemento dentro de una colección. Por supuesto, no debemos usar la variable de una sola letra sino aquellos que representen nombres de lo que estamos modelando. En otros ejemplos veremos que el mecanismo de for-each de pelela permite también obtener el índice a través de la propiedad `index`.
 
 ### Binding entre vista y view model
 
@@ -37,9 +51,8 @@ Si queremos crear 3 cuadrados:
 - escribimos 3 en el input "cuadrados-input" que tiene un binding bidireccional con el view model, queda entonces **3** en el atributo cantidadCuadrados
 - al presionar sobre el botón "Agregar varios" ejecutamos el método `agregarVariosCuadrados` del view model...
 - ...que genera 3 cuadrados y los agrega a la lista `cuadrados` del view model...
-- ...que a su vez hace redibujar el div cuya clase es "cuadrados-container". Se dispara un for-each y se muestran uno a uno los cuadrados...
-- cada cuadrado tiene como clases: 1. cuadrado, 2. un binding con la propiedad `clase` del objeto cuadrado en cuestión
-
+- ...que a su vez hace redibujar el div cuya clase es "cuadrados-container". Se redibuja el for-each y se muestran uno a uno los cuadrados...
+- cada cuadrado tiene como clases de css: 1. `cuadrado`, fijo, 2. un binding con la propiedad `clase` del objeto cuadrado en cuestión
 
 Algo similar pasa cuando se hace click en agregar un cuadrado.
 
